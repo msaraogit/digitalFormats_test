@@ -6,22 +6,19 @@ const { Model } = require("../../models/sao/request/scpfaeRequest");
 const generateScpfae = async () => {
   const data = fillModel();
   //console.log("🚀 ~ generateScmorales ~ data:", data)
-  if (!data) return { success: "BAD RESQUEST.", html:"" };
+  if (!data) return { html: "" };
   try {
-  const digitalFormatsAxios = DIGITALFORMATS();
-  const endpoint = `/generate-scpfae`;
+    const digitalFormatsAxios = DIGITALFORMATS();
+    const endpoint = `/generate-scpfae`;
 
-  const response = await digitalFormatsAxios.post(endpoint, data);
+    const response = await digitalFormatsAxios.post(endpoint, data);
     if (response.status === 200) {
       //console.log("🚀 ~ generateScmorales ~ response.html:",response.html);
       let mappedResponse = new Response200(response.data);
-      mappedResponse.success="ok";
       return mappedResponse.html;
     } else if (response.status !== 200) {
       console.log(response.data);
-      let err = new Error(response.data.message);
-      err.response = response;
-      var response200 = new Response200("","error");
+      var response200 = new Response200("");
       return response200;
     }
   } catch (err) {

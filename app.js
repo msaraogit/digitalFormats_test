@@ -14,14 +14,14 @@ try {
   ESTO SE GUARDA EN LA CARPETA tmpFiles
   */
   const prueba = async () => {
-    //await getScmorales();
+    await getScmorales();
     await getScpfae();
-    //await getPldpfae();
-    //await getPldpmorales();
+    await getPldpfae();
+    await getPldpmorales();
     await getPrivacynoticepm();
     await getPrivacynoticea1();
-    //await geteAutbca1();
-    //await geteAutbcpm();
+    await geteAutbca1();
+    await geteAutbcpm();
   };
   prueba();
 } catch (error) {

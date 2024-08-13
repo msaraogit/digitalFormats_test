@@ -1,10 +1,8 @@
 class Response200 {
     constructor(
-        html,
-        success){
+        html){
             
     this.html = html ?? "";
-    this.success = success ?? undefined;
         }
 
 }

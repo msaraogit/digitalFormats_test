@@ -1,19 +1,19 @@
 const { mapResponse400 } = require("../response/error");
 const { Response200 } = require("../response/success");
 const DIGITALFORMATS = require("./config");
-const { Model } = require("../../models/sao/request/autbca1Request");
+const { Model } = require("../../models/sao/request/privacynoticea1Request");
 
-const generateAutbca1 = async () => {
+const generatePrivacyNoticea1 = async () => {
   const data = fillModel();
-  //console.log("🚀 ~ generateAutbca1 ~ data:", data)
+  //console.log("🚀 ~ generatePrivacynoticepm ~ data:", data)
   if (!data) return { html: "" };
   try {
     const digitalFormatsAxios = DIGITALFORMATS();
-    const endpoint = `/generate-autbca1`;
+    const endpoint = `/generate-privacynoticea1`;
 
     const response = await digitalFormatsAxios.post(endpoint, data);
     if (response.status === 200) {
-      //console.log("🚀 ~ generateAutbca1 ~ response.html:",response.html);
+      //console.log("🚀 ~ generatePrivacynoticepm ~ response.html:",response.html);
       let mappedResponse = new Response200(response.data);
       return mappedResponse.html;
     } else if (response.status !== 200) {
@@ -33,28 +33,14 @@ const generateAutbca1 = async () => {
 };
 function fillModel() {
   const model = new Model(
-    "Queretaro",
-    "28/04/2024",
-    true,
-    false,
-    false,
     "SOLUCIONES EN CONTROL Y SISTEMAS INDUSTRIALES S.A. DE C.V.",
-    "Jose Alberto. Vazquez. Hernandez",
-    "SCS150814MD2",
-    "13 De Septiembre. 12 201",
-    "Niños Heroes",
-    "76010",
-    "Querétaro",
-    "Querétaro",
-    "Querétaro",
-    "4428247400",
-    "Anonimo",
     "28/04/2024",
-    "1234567890"
+    "",
+    true
   );
 
   return model;
 }
 module.exports = {
-  generateAutbca1,
+  generatePrivacyNoticea1,
 };

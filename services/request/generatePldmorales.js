@@ -5,22 +5,19 @@ const { CompanyModel } = require("../../models/sao/request/pldmoralesRequest");
 
 const generatePldmorales = async () => {
   const data = fillModel();
-  //console.log("🚀 ~ generateScpfae ~ data:", data)
-  if (!data) return { err: "BAD RESQUEST." };
+  //console.log("🚀 ~ generatePldmorales ~ data:", data)
+  if (!data) return { html: "" };
   try {
     const digitalFormatsAxios = await DIGITALFORMATS();
     const endpoint = `/generate-pldmorales`;
     const response = await digitalFormatsAxios.post(endpoint, data);
     if (response.status === 200) {
-      //console.log("🚀 ~ generatePldpfae ~ mappedResponse.html:",mappedResponse.html);
+      //console.log("🚀 ~ generatePldmorales ~ mappedResponse.html:",mappedResponse.html);
       let mappedResponse = new Response200(response.data);
-      mappedResponse.success = "ok";
       return mappedResponse.html;
     } else if (response.status !== 200) {
       console.log(response.data);
-      let err = new Error(response.data.message);
-      err.response = response;
-      let response200 = new Response200("", "error");
+      let response200 = new Response200("");
       return response200;
     }
   } catch (err) {

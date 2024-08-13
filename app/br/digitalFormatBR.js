@@ -4,7 +4,7 @@ const { generateScpfae } = require("../../services/request/generateScpfae");
 const { generatePldmorales } = require("../../services/request/generatePldmorales");
 const { generatePldpfae } = require("../../services/request/generatePldpfae");
 const { generatePrivacyNoticepm } = require("../../services/request/generatePrivacynoticepm");
-const { generatePrivacyNoticea1 } = require("../../services/request/generatePrivacyNoticea1");
+const { generatePrivacyNoticea1 } = require("../../services/request/generatePrivacyNoticea1.js");
 const { generateAutbca1 } = require("../../services/request/generateAutbca1");
 const { generateAutbcpm } = require("../../services/request/generateAutbcpm");
 
