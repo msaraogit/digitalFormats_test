@@ -7,7 +7,19 @@ const {
   getPrivacynoticea1,
   geteAutbca1,
   geteAutbcpm,
-} = require("./app/br/digitalFormatBR");
+  } = require("./app/br/digitalFormatBR");
+  /*
+const {
+  getScmorales,
+  getScpfae,
+  getPldpfae,
+  getPldpmorales,
+  getPrivacynoticepm,
+  getPrivacynoticea1,
+  geteAutbca1,
+  geteAutbcpm,
+} = require("./app/br/htmlpdfBR");
+*/
 
 try {
   /*
