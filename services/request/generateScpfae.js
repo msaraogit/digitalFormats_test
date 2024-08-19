@@ -83,7 +83,7 @@ function fillModel() {
     "Director",
     "https://scosi.mx/",
     "Scosi  sa de cv",
-    "5 años",
+    "5",
     "4428247400",
     5083630.0,
     5083630.0,
