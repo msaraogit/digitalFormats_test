@@ -16,8 +16,118 @@ const generateScmorales = async () => {
   try {
     const digitalFormatsAxios = DIGITALFORMATS();
     const endpoint = `/generate-scmorales`;
-
-    const response = await digitalFormatsAxios.post(endpoint, data);
+    const json={
+      "place": "Yucatán",
+      "date": "2024-08-14T08:10:30.451Z",
+      "type": "DIGITAL",
+      "term": "18",
+      "amount": 1200000,
+      "workingCapital": true,
+      "fixedAsset": false,
+      "technologicalInnovation": false,
+      "consolidationLiabilities": false,
+      "others": false,
+      "descriptionOtherUse": "",
+      "businessName": "GLOBAL INNOVATION TECHNOLOGIES SOCIEDAD ANONIMA DE CAPITAL VARIABLE",
+      "rfc": "GIT130827B16",
+      "tradeNameOrBusiness": "GLOBAL INNOVATION TECHNOLOGIES SOCIEDAD ANONIMA DE CAPITAL VARIABLE",
+      "business": "Servicios de consultoria en computacion, Comercio al por mayor de equipo y accesorios de computo, Comercio al por mayor de articulos de papeleria para uso escolar y de oficina",
+      "nacionality": "MEX",
+      "electronicSignatureSerialNumber": "1000000702301650",
+      "fiscalAddress": "C 9 C POR 72 E 647",
+      "colony": "Gran Santa Fe",
+      "postalCode": "97203",
+      "landline": "9995767253",
+      "city": "Mérida",
+      "municipality": "Mérida",
+      "state": "Yucatán",
+      "country": "Mexico",
+      "numberEmployees": 3,
+      "webSite": "https://www.ejemplo.com/",
+      "notaryNumber": "41",
+      "nameOfNotary": "Rafael J. Ramos Vázquez",
+      "entity": "Yucatán",
+      "writingNumber": "228",
+      "registrationInformation": "55380",
+      "constitutionDate": "2013-09-18",
+      "empoweredRepresentative": "Uriel José Basto Pedre",
+      "writingNumberWithPowers": "635",
+      "writingDate": "2013-08-27",
+      "managers": [
+          {
+              "completeName": "LUIS OSVALDO TORRES CARDEÑA",
+              "position": "0",
+              "rfc": "TOCL850409CZ8",
+              "email": "luistorres@grupogit.com",
+              "antiquity": "AsociadoPF"
+          },
+          {
+              "completeName": "URIEL JOSE BASTO PEDRE",
+              "position": "0",
+              "rfc": "BAPU8605285F4",
+              "email": "urielbasto@grupogit.com",
+              "antiquity": "AsociadoPF"
+          }
+      ],
+      "contacts": [
+          {
+              "type": "Cobranza",
+              "completeName": "LUIS OSVALDO TORRES CARDENA",
+              "position": "0",
+              "phone": "9991228431",
+              "email": "luistorres@grupogit.com"
+          },
+          {
+              "type": "Cobranza",
+              "completeName": "URIEL JOSE BASTO PEDRE",
+              "position": "0",
+              "phone": "9995767253",
+              "email": "urielbasto@grupogit.com"
+          }
+      ],
+      "productsServices": [
+          {
+              "nameOrDescription": "Servicios de consultoría en computación",
+              "percentageSales": "80%",
+              "percentageMarket": "1%"
+          },
+          {
+              "nameOrDescription": "Comercio al por mayor de artículos de papelería para uso escolar y de oficina",
+              "percentageSales": "10%",
+              "percentageMarket": "1%"
+          },
+          {
+              "nameOrDescription": "Comercio al por mayor de equipo y accesorios de cómputo",
+              "percentageSales": "10%",
+              "percentageMarket": "1%"
+          }
+      ],
+      "endorsementData": {
+          "completeNameOrBusinessName": "URIEL JOSE BASTO PEDRE",
+          "rfc": "GIT130827B16",
+          "curp": "BAPU860528HYNSDR04",
+          "occupationOrBusiness": "Empresario",
+          "relationshipWithApplicant": "Socio",
+          "email": "urielbasto@grupogit.com",
+          "electronicSignatureSerialNumber": "1000000702301650",
+          "civilStatus": "CASADO",
+          "regime": "MANCOMUNADO",
+          "spousesName": "",
+          "fiscalAddress": "C 9 C POR 72 E",
+          "colony": "Gran Santa Fe",
+          "postalCode": "97314",
+          "city": "MÉRIDA",
+          "municipality": "Mérida",
+          "state": "Yucatán",
+          "country": "Mexico",
+          "landline": "9995767253",
+          "typeDomicile": "Propio"
+      },
+      "annualSales": 8613109.523389997,
+      "nameOflegalRepresentative": "URIEL JOSE BASTO PEDRE",
+      "nameOfEndorsement": "URIEL JOSE BASTO PEDRE"
+  };
+    const response = await digitalFormatsAxios.post(endpoint, json);
     if (response.status === 200) {
       //console.log("🚀 ~ generateScmorales ~ mappedResponse.html:", mappedResponse.html);
       let mappedResponse = new Response200(response.data);

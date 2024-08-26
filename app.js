@@ -3,10 +3,12 @@ const {
   getScpfae,
   getPldpfae,
   getPldpmorales,
+  geteEntidadesfinancieras,
   getPrivacynoticepm,
   getPrivacynoticea1,
   geteAutbca1,
   geteAutbcpm,
+  getPlda1,
   } = require("./app/br/digitalFormatBR");
   /*
 const {
@@ -30,10 +32,12 @@ try {
     await getScpfae();
     await getPldpfae();
     await getPldpmorales();
-    await getPrivacynoticepm();
-    await getPrivacynoticea1();
-    await geteAutbca1();
-    await geteAutbcpm();
+    await geteEntidadesfinancieras();
+    await getPlda1();
+    //await getPrivacynoticepm();
+    //await getPrivacynoticea1();
+    //await geteAutbca1();
+    //await geteAutbcpm();
   };
   prueba();
 } catch (error) {
