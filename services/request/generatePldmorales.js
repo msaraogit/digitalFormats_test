@@ -95,20 +95,35 @@ function fillModel() {
     },
     partnerOrShareholder: [
       {
-        completeName: "Jose Alberto. Vazquez. Hernandez.",
+        completeName: "María de las Mercedes Medina",
+        rfc: "MEME780724BM3",
+        birthDay: "1975-03-19",
+        percentageParticipation: "50%",
+      },{
+        completeName: "Juana Dellavedova",
         rfc: "VAHA750319MZA",
         birthDay: "1975-03-19",
-        percentageParticipation: "85%",
+        percentageParticipation: "45%",
+      },{
+        completeName: "Alejandro Carlos Dellavedova",
+        rfc: "DEXJ9508103V8",
+        birthDay: "1975-03-19",
+        percentageParticipation: "5%",
       },
     ],
     posibleRealOwner: {
       denominationOrSocialReason: "",
       posibleRealOwners: [
         {
-          completeName: "Jose Alberto. Vazquez. Hernandez.",
+          completeName: "María de las Mercedes Medina",
+          rfc: "MEME780724BM3",
+          birthDay: "1975-03-19",
+          percentageParticipation: "50%",
+        },{
+          completeName: "Juana Dellavedova",
           rfc: "VAHA750319MZA",
           birthDay: "1975-03-19",
-          percentageParticipation: "85%",
+          percentageParticipation: "45%",
         },
       ],
     },
@@ -124,18 +139,18 @@ function fillModel() {
     },
     membersOfBoardOfDirectors: [
       {
-        completeName: "Jose Alberto. Vazquez. Hernandez.",
-        position: "Presidente de Consejo",
+        completeName: "María de las Mercedes Medina",
+        position: "Consejo de Gerentes",
         rfc: "VAHA750319MZA",
-        nacionality: "Mexicana",
-        countryResidence: "México",
+        nacionality: "Argentina",
+        countryResidence: "ARG",
       },
       {
-        completeName: "Edgar. . Vázquez Hernández",
-        position: "Secretario",
+        completeName: "Juana Dellavedova",
+        position: "Consejo de Gerentes",
         rfc: "VAHA750319MZA",
-        nacionality: "Mexicana",
-        countryResidence: "México",
+        nacionality: "Argentina",
+        countryResidence: "ARG",
       },
     ],
     generalDirector: {
