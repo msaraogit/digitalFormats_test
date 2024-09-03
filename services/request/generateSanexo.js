@@ -1,13 +1,4 @@
 const {
-    AccountData,
-    CustomerData,
-    ConstitutiveWritingData,
-    LegalRepresentativeData,
-    DataThePowersLegalRepresentative,
-    CustomerMedia,
-    FinsusMedia,
-    Media,
-    Signature,
     Model,
   } = require("../../models/sao/request/sanexoRequest");
   const { mapResponse400 } = require("../../services/response/error");
@@ -47,10 +38,10 @@ const model = new Model({
         typeOperation: "Pasiva",
         interestPayment: ["Mensual"],
         automaticRenewal: false,
-        originBankingInstitution: "Bancpmer",
-        originAccount: "103074609",
-        originClabe: "12680001030746000",
-        BankingInstitutionFinsus: "Banorte",
+        originBankingInstitution: "BBVA MEXICO, S.A.",
+        originAccount: "144883896",
+        originClabe: "012180001448838961",
+        BankingInstitutionFinsus: "BANORTE",
         AccountFinsus: "0313939121",
         ClabeFinsus: "072180003139391218"
     },

@@ -11,6 +11,8 @@ const {
   getPlda1,
   getSctdc,
   getSanexo,
+  getElectronicServices,
+  getCse,
   } = require("./app/br/digitalFormatBR");
   /*
 const {
@@ -38,6 +40,8 @@ try {
     await getPlda1();
     await getSctdc();
     await getSanexo();
+    await getElectronicServices();
+    await getCse();
     //await getPrivacynoticepm();
     //await getPrivacynoticea1();
     //await geteAutbca1();
