@@ -10,6 +10,7 @@ const {
   geteAutbcpm,
   getPlda1,
   getSctdc,
+  getSanexo,
   } = require("./app/br/digitalFormatBR");
   /*
 const {
@@ -36,6 +37,7 @@ try {
     await geteEntidadesfinancieras();
     await getPlda1();
     await getSctdc();
+    await getSanexo();
     //await getPrivacynoticepm();
     //await getPrivacynoticea1();
     //await geteAutbca1();
