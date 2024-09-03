@@ -32,7 +32,8 @@ const generateCse = async () => {
   }
 };
 function fillModel() {
-    const model = new Model("Alfonso",
+    const model = new Model(
+        "Alfonso",
         "Jaime",
         "Sanchez",
         "Masculino",
@@ -64,8 +65,41 @@ function fillModel() {
         "28",
         "Agosto",
         "2024");
-
-  return model;
+  const json={
+    "name": "NORMA YOLANDA",
+    "paternal": "CARRETO",
+    "maternal": "LEYTE",
+    "gender": "F",
+    "birthDay": "05/03/1961",
+    "countryBirth": "MEX",
+    "entityBirth": "DF",
+    "nacionality": "MEX",
+    "civilStatus": "Soltero(a)",
+    "street": "MDO DE JAMAICA",
+    "externalNumber": "loc186",
+    "internalNumber": "",
+    "colony": "Jamaica",
+    "postalCode": "15800",
+    "municipality": "Venustiano Carranza",
+    "state": "Ciudad de México",
+    "country": "MEX",
+    "operations": [],
+    "clabe": "",
+    "monthlyCommission": "",
+    "curp": "CALN610305MDFRYR07",
+    "rfc": "CALN610305QJ1",
+    "AdvancedElectronicSignature": "",
+    "phone": "",
+    "email": "distribuidoranorsa@gmail.com",
+    "idIdentificationINE": true,
+    "numberIdentification": "149948101",
+    "otherIdentification": "",
+    "completeNameCustomer": "NORMA YOLANDA CARRETO LEYTE",
+    "day": "3",
+    "month": "Septiembre",
+    "year": "2024"
+};
+  return json;
 }
 module.exports = {
     generateCse,
