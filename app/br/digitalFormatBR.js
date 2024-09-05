@@ -14,13 +14,19 @@ const {
 } = require("../../services/request/generatePrivacyNoticea1.js");
 const { generateAutbca1 } = require("../../services/request/generateAutbca1");
 const { generateAutbcpm } = require("../../services/request/generateAutbcpm");
-const { generateEntidadesfinancieras } = require("../../services/request/generateEntidadesfinancieras.js");
+const {
+  generateEntidadesfinancieras,
+} = require("../../services/request/generateEntidadesfinancieras.js");
 const { generatePlda1 } = require("../../services/request/generatePlda1.js");
 const { generateSctdc } = require("../../services/request/generateSctdc.js");
 const { generateSanexo } = require("../../services/request/generateSanexo.js");
-const { generateElectronicServices } = require("../../services/request/generateElectronicServices.js");
+const {
+  generateElectronicServices,
+} = require("../../services/request/generateElectronicServices.js");
 const { generateCse } = require("../../services/request/generateCse.js");
-
+const {
+  generateTrainingContractN3,
+} = require("../../services/request/generateTrainingContractN3.js");
 
 const fs = require("fs");
 const puppeteer = require("puppeteer");
@@ -533,7 +539,7 @@ const getSanexo = async () => {
     format: "A4",
     printBackground: true,
     margin: { left: "0cm", top: "1cm", right: "0cm", bottom: "0cm" },
-    scale: 0.6,
+    scale: 0.58,
   });
   fs.writeFileSync(pagarePDF, pdfPagare);
   await browser.close();
@@ -569,7 +575,7 @@ const getElectronicServices = async () => {
     format: "A4",
     printBackground: true,
     margin: { left: "0cm", top: "1cm", right: "0cm", bottom: "0cm" },
-    scale: 0.6,
+    scale: 0.8,
   });
   fs.writeFileSync(pagarePDF, pdfPagare);
   await browser.close();
@@ -605,13 +611,48 @@ const getCse = async () => {
     format: "A4",
     printBackground: true,
     margin: { left: "0cm", top: "1cm", right: "0cm", bottom: "0cm" },
-    scale: 0.6,
+    scale: 0.8,
   });
   fs.writeFileSync(pagarePDF, pdfPagare);
   await browser.close();
   console.log(`PDF ${name} generado exitosamente`);
 };
-
+const getTrainingContractN3 = async () => {
+  const mappedResponse = await generateTrainingContractN3();
+  const name = "TrainingContractN3";
+  const pagarePDF = path.resolve(__dirname, `${uploadDir + name}_1.pdf`);
+  const browser = await puppeteer.launch({
+    headless: "chrome",
+    args: [
+      "--no-sandbox",
+      "--disable-setuid-sandbox",
+      "--allow-file-access-from-files",
+    ],
+    defaultViewport: {
+      width: 750,
+      height: 500,
+      deviceScaleFactor: 1,
+      isMobile: false,
+      hasTouch: false,
+      isLandscape: false,
+    },
+  });
+  const page = await browser.newPage();
+  page.setUserAgent(
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36"
+  );
+  await page.setContent(mappedResponse.html, { waitUntil: "load" });
+  //console.log(mappedResponse);
+  const pdfPagare = await page.pdf({
+    format: "A4",
+    printBackground: true,
+    margin: { left: "0cm", top: "1cm", right: "0cm", bottom: "0cm" },
+    scale: 0.8,
+  });
+  fs.writeFileSync(pagarePDF, pdfPagare);
+  await browser.close();
+  console.log(`PDF ${name} generado exitosamente`);
+};
 module.exports = {
   getScmorales,
   getScpfae,
@@ -627,4 +668,5 @@ module.exports = {
   getSanexo,
   getElectronicServices,
   getCse,
+  getTrainingContractN3,
 };

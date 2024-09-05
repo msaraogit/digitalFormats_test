@@ -13,6 +13,7 @@ const {
   getSanexo,
   getElectronicServices,
   getCse,
+  getTrainingContractN3,
   } = require("./app/br/digitalFormatBR");
   /*
 const {
@@ -42,6 +43,7 @@ try {
     await getSanexo();
     await getElectronicServices();
     await getCse();
+    await getTrainingContractN3();
     //await getPrivacynoticepm();
     //await getPrivacynoticea1();
     //await geteAutbca1();

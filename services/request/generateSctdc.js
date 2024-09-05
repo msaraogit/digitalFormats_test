@@ -9,7 +9,7 @@ const generateSctdc = async () => {
   if (!data) return { html: "" };
   try {
     const digitalFormatsAxios = DIGITALFORMATS();
-    const endpoint = `/generate-scpfae`;
+    const endpoint = `/generate-sctdc`;
 
     const response = await digitalFormatsAxios.post(endpoint, data);
     if (response.status === 200) {
