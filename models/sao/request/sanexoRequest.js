@@ -80,7 +80,9 @@ class ConstitutiveWritingData {
 
 class LegalRepresentativeData {
     constructor({
-        completeName = undefined,
+        name = undefined,
+        paternal = undefined,
+        maternal = undefined,
         gender = undefined,
         ocupation = undefined,
         birthDay = undefined,
@@ -98,7 +100,9 @@ class LegalRepresentativeData {
         curp = undefined,
         AdvancedElectronicSignature = undefined,
     } = {}) {
-        this.completeName = completeName;
+        this.name = name;
+        this.paternal = paternal;
+        this.maternal = maternal;
         this.gender = gender;
         this.ocupation = ocupation;
         this.birthDay = birthDay;

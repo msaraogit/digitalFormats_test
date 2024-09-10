@@ -216,7 +216,184 @@ function fillModel() {
     },
   };
   const companyModel = new CompanyModel(companyData);
-  return companyModel;
+  const json={
+    "customerData": {
+        "denominationOrSocialReason": "COQUILUB S.A. de C.V.",
+        "tradeNameOrBusiness": "COQUILUB",
+        "rfc": "COQ180522NB4",
+        "electronicSignatureSerialNumber": "00001000000702377019",
+        "phone": "5563537073",
+        "email": "m.galvan@coquilub.com.mx",
+        "nacionality": "MEX",
+        "countryOfConstitution": "MEX",
+        "countryTIN": "MEX",
+        "tin": "",
+        "reasonOpeningAccount": "",
+        "business": "",
+        "productsServices": ""
+    },
+    "addresses": [
+        {
+            "type": "Incode",
+            "street": "C EL PORTAL 105",
+            "internalNumber": "",
+            "externalNumber": "105",
+            "colony": "Jardines de la Hacienda Sur",
+            "postalCode": "54720",
+            "municipality": "Cuautitlán Izcalli",
+            "state": "México",
+            "country": "MEX"
+        }
+    ],
+    "operations": {
+        "listFederalEntitiesOfferTheProducts": "Toda la republica",
+        "offerItsProductsInTheForeign": false,
+        "listCountriesOfferTheProducts": "",
+        "numberEmployees": 11
+    },
+    "corporateInformation": {
+        "writingNumber": "38665",
+        "constitutionDate": "2017-11-29",
+        "commercialElectronicFolio": "N-2018087506",
+        "operationsStartDate": "2018-10-26",
+        "lastAssemblyDate": "2023-01-26",
+        "nameOflegalRepresentative": "Miguel Ángel Galván González ",
+        "curp": "GAGM860901HMCLNG01",
+        "rfc": "GAGM860901I95",
+        "nacionality": "MEX",
+        "countryBirth": "MEX",
+        "countryResidence": "MEX",
+        "apostilleData": ""
+    },
+    "partnerOrShareholder": [
+        {
+            "completeName": "ERNESTO ZAMORA CONTRERAS",
+            "rfc": "ZACE680115JD8",
+            "birthDay": "15/01/1968",
+            "percentageParticipation": "88.00%"
+        },
+        {
+            "completeName": "MIGUEL ANGEL GALVAN GONZALEZ",
+            "rfc": "GAGM860901I95",
+            "birthDay": "01/09/1986",
+            "percentageParticipation": "2.00%"
+        }
+    ],
+    "posibleRealOwner": {
+        "denominationOrSocialReason": "COQUILUB",
+        "posibleRealOwners": [
+            {
+                "completeName": "ERNESTO ZAMORA CONTRERAS",
+                "rfc": "ZACE680115JD8",
+                "birthDay": "15/01/1968",
+                "percentageParticipation": "88.00%"
+            },
+            {
+                "completeName": "MIGUEL ANGEL GALVAN GONZALEZ",
+                "rfc": "GAGM860901I95",
+                "birthDay": "01/09/1986",
+                "percentageParticipation": "2.00%"
+            }
+        ]
+    },
+    "administrationOrgan": {
+        "formOfAdministration": "Consejo de Administración"
+    },
+    "presidentOfBoardOfDirectors": {
+        "completeName": "MIGUEL ANGEL GALVAN GONZALEZ",
+        "position": "PENDIENTE",
+        "rfc": "GAGM860901I95",
+        "nacionality": "MEX",
+        "countryResidence": "MEX"
+    },
+    "membersOfBoardOfDirectors": [
+        {
+            "completeName": "ERNESTO ZAMORA CONTRERAS",
+            "position": "PENDIENTE",
+            "rfc": "ZACE680115JD8",
+            "nacionality": "MEX",
+            "countryResidence": "MEX"
+        },
+        {
+            "completeName": "MIGUEL ANGEL GALVAN GONZALEZ",
+            "position": "PENDIENTE",
+            "rfc": "GAGM860901I95",
+            "nacionality": "MEX",
+            "countryResidence": "MEX"
+        }
+    ],
+    "generalDirector": {
+        "completeName": "MIGUEL ANGEL GALVAN GONZALEZ",
+        "position": "PENDIENTE"
+    },
+    "immediateLowerHierarchy": [
+        {
+            "completeName": "ERNESTO ZAMORA CONTRERAS",
+            "position": "PENDIENTE"
+        },
+        {
+            "completeName": "MIGUEL ANGEL GALVAN GONZALEZ",
+            "position": "PENDIENTE"
+        }
+    ],
+    "realOwner": {
+        "typeOfControlHeld": "Mediante la participación en el capital social (igual ó mayor al 25%)",
+        "name": "MIGUEL ANGEL",
+        "paternal": "GALVAN",
+        "maternal": "GONZALEZ",
+        "rfc": "GAGM860901I95",
+        "ocupation": "PENDIENTE"
+    },
+    "politicallyExposedPeople": {
+        "partnerOrShareholderPerformPublicOrGovernmentOrPoliticalFunctions": false,
+        "position": "PENDIENTE",
+        "period": "",
+        "legalRepresentativePerformPublicOrGovernmentOrPoliticalFunctions": false,
+        "legalRepresentativePosition": "",
+        "legalRepresentativePeriod": "",
+        "anyFamilyPerformPublicOrGovernmentOrPoliticalFunctions": false,
+        "familyCompleteName": "",
+        "familyRelationship": "",
+        "familyPosition": "",
+        "familyPeriod": ""
+    },
+    "accountUse": {
+        "servicesHire": [
+            "Cuenta de Depósito a la vista",
+            "Crédito"
+        ],
+        "sourceOfResources": [
+            "Ventas",
+            "Otros"
+        ],
+        "accountGoal": [
+            "Concentrar/Dispersar Fondos",
+            "Administrar gastos/Ingresos",
+            "Pago de Créditos",
+            "Otros"
+        ]
+    },
+    "transactionability": {
+        "monthlyIncome": 38718369.13943835,
+        "monthlyExpenditures": 34411018.67758406,
+        "makeTransfers": true,
+        "howManyTransfersInAMonth": 5,
+        "averageMonthlyAmountOfTransactionsInTheAccount": 50000,
+        "youWillReceiveTransfersFromThirdParties": true,
+        "averageWithdrawalsResourcesMakeMonth": 250000,
+        "destinationOrUseOfTheCreditRequested": "ESTA SECCION ESTA PENDIENTE",
+        "makeAdvancePayments": false,
+        "doYouExpectToMakeTheCreditPaymentToThroughThirdParties": false,
+        "nameOflegalRepresentative": "AQUI IRÁ EL NOMBRE DEL REPRESENTANTE LEGAL",
+        "date": "05/09/2024"
+    },
+    "promotorData": {
+        "date": "05/09/2024",
+        "promoterNotes": "",
+        "fullNamePromoter": "Pendiente por enviar"
+    }
+};
+  return json;
 }
 module.exports = {
   generatePldmorales,

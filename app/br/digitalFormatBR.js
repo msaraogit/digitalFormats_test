@@ -27,6 +27,7 @@ const { generateCse } = require("../../services/request/generateCse.js");
 const {
   generateTrainingContractN3,
 } = require("../../services/request/generateTrainingContractN3.js");
+ const { generateContractAccount } = require("../../services/request/generateContractAccount.js");
 
 const fs = require("fs");
 const puppeteer = require("puppeteer");
@@ -653,6 +654,42 @@ const getTrainingContractN3 = async () => {
   await browser.close();
   console.log(`PDF ${name} generado exitosamente`);
 };
+const getContractAccount = async () => {
+  const mappedResponse = await generateContractAccount();
+  const name = "ContractAccount";
+  const pagarePDF = path.resolve(__dirname, `${uploadDir + name}_1.pdf`);
+  const browser = await puppeteer.launch({
+    headless: "chrome",
+    args: [
+      "--no-sandbox",
+      "--disable-setuid-sandbox",
+      "--allow-file-access-from-files",
+    ],
+    defaultViewport: {
+      width: 750,
+      height: 500,
+      deviceScaleFactor: 1,
+      isMobile: false,
+      hasTouch: false,
+      isLandscape: false,
+    },
+  });
+  const page = await browser.newPage();
+  page.setUserAgent(
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36"
+  );
+  await page.setContent(mappedResponse.html, { waitUntil: "load" });
+  //console.log(mappedResponse);
+  const pdfPagare = await page.pdf({
+    format: "A4",
+    printBackground: true,
+    margin: { left: "0cm", top: "1cm", right: "0cm", bottom: "0cm" },
+    scale: 0.8,
+  });
+  fs.writeFileSync(pagarePDF, pdfPagare);
+  await browser.close();
+  console.log(`PDF ${name} generado exitosamente`);
+};
 module.exports = {
   getScmorales,
   getScpfae,
@@ -669,4 +706,5 @@ module.exports = {
   getElectronicServices,
   getCse,
   getTrainingContractN3,
+  getContractAccount,
 };

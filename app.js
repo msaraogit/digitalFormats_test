@@ -14,6 +14,7 @@ const {
   getElectronicServices,
   getCse,
   getTrainingContractN3,
+  getContractAccount,
   } = require("./app/br/digitalFormatBR");
   /*
 const {
@@ -44,6 +45,7 @@ try {
     await getElectronicServices();
     await getCse();
     await getTrainingContractN3();
+    await getContractAccount();
     //await getPrivacynoticepm();
     //await getPrivacynoticea1();
     //await geteAutbca1();

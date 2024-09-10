@@ -17,115 +17,114 @@ const generateScmorales = async () => {
     const digitalFormatsAxios = DIGITALFORMATS();
     const endpoint = `/generate-scmorales`;
     const json={
-      "place": "Yucatán",
-      "date": "2024-08-14T08:10:30.451Z",
+      "place": "México",
+      "date": "28/08/2024",
       "type": "DIGITAL",
-      "term": "18",
-      "amount": 1200000,
+      "term": "24",
+      "amount": 4000000,
       "workingCapital": true,
       "fixedAsset": false,
       "technologicalInnovation": false,
       "consolidationLiabilities": false,
       "others": false,
       "descriptionOtherUse": "",
-      "businessName": "GLOBAL INNOVATION TECHNOLOGIES SOCIEDAD ANONIMA DE CAPITAL VARIABLE",
-      "rfc": "GIT130827B16",
-      "tradeNameOrBusiness": "GLOBAL INNOVATION TECHNOLOGIES SOCIEDAD ANONIMA DE CAPITAL VARIABLE",
-      "business": "Servicios de consultoria en computacion, Comercio al por mayor de equipo y accesorios de computo, Comercio al por mayor de articulos de papeleria para uso escolar y de oficina",
+      "businessName": "COQUILUB S.A. de C.V.",
+      "rfc": "COQ180522NB4",
+      "tradeNameOrBusiness": "COQUILUB",
+      "business": "Comercializacion de aceites y lubricantes",
       "nacionality": "MEX",
-      "electronicSignatureSerialNumber": "1000000702301650",
-      "fiscalAddress": "C 9 C POR 72 E 647",
-      "colony": "Gran Santa Fe",
-      "postalCode": "97203",
-      "landline": "9995767253",
-      "city": "Mérida",
-      "municipality": "Mérida",
-      "state": "Yucatán",
-      "country": "Mexico",
-      "numberEmployees": 3,
-      "webSite": "https://www.ejemplo.com/",
-      "notaryNumber": "41",
-      "nameOfNotary": "Rafael J. Ramos Vázquez",
-      "entity": "Yucatán",
-      "writingNumber": "228",
-      "registrationInformation": "55380",
-      "constitutionDate": "2013-09-18",
-      "empoweredRepresentative": "Uriel José Basto Pedre",
-      "writingNumberWithPowers": "635",
-      "writingDate": "2013-08-27",
+      "electronicSignatureSerialNumber": "00001000000702377019",
+      "fiscalAddress": "Fuente de pegaso 131",
+      "colony": "Fuentes del Valle",
+      "postalCode": "54910",
+      "landline": "5534082928",
+      "city": "TULTITLÁN",
+      "municipality": "Tultitlán",
+      "state": "México",
+      "country": "MEX",
+      "numberEmployees": 11,
+      "webSite": "",
+      "notaryNumber": "91",
+      "nameOfNotary": "Maria Guadalupe Pérez Palomino ",
+      "entity": "México",
+      "writingNumber": "38665",
+      "registrationInformation": "N-2018087506",
+      "constitutionDate": "2018-10-26",
+      "empoweredRepresentative": "Miguel Ángel Galván González ",
+      "writingNumberWithPowers": "15969",
+      "writingDate": "2017-11-29",
       "managers": [
           {
-              "completeName": "LUIS OSVALDO TORRES CARDEÑA",
-              "position": "0",
-              "rfc": "TOCL850409CZ8",
-              "email": "luistorres@grupogit.com",
-              "antiquity": "AsociadoPF"
+              "completeName": "MIGUEL ANGEL GALVAN GONZALEZ",
+              "position": "Directivo",
+              "rfc": "GAGM860901I95",
+              "email": "m.galvan@coquilub.com.mx"
           },
           {
-              "completeName": "URIEL JOSE BASTO PEDRE",
-              "position": "0",
-              "rfc": "BAPU8605285F4",
-              "email": "urielbasto@grupogit.com",
-              "antiquity": "AsociadoPF"
+              "completeName": "ERNESTO ZAMORA CONTRERAS",
+              "position": "Directivo",
+              "rfc": "ZACE680115JD8",
+              "email": "e.zamora@coquilub.com.mx"
           }
       ],
       "contacts": [
           {
               "type": "Cobranza",
-              "completeName": "LUIS OSVALDO TORRES CARDENA",
-              "position": "0",
-              "phone": "9991228431",
-              "email": "luistorres@grupogit.com"
+              "completeName": "MIGUEL ANGEL GALVAN GONZALEZ",
+              "position": "Directivo",
+              "phone": "5563537073",
+              "email": "m.galvan@coquilub.com.mx"
           },
           {
-              "type": "Cobranza",
-              "completeName": "URIEL JOSE BASTO PEDRE",
-              "position": "0",
-              "phone": "9995767253",
-              "email": "urielbasto@grupogit.com"
+              "type": "Negocios",
+              "completeName": "ERNESTO ZAMORA CONTRERAS",
+              "position": "Directivo",
+              "phone": "5554318659",
+              "email": "e.zamora@coquilub.com.mx"
+          },
+          {
+              "type": " en Caso de Aclaraciones de Información",
+              "completeName": "MIGUEL ANGEL GALVAN GONZALEZ",
+              "position": "Directivo",
+              "phone": "5563537073",
+              "email": "m.galvan@coquilub.com.mx"
           }
       ],
       "productsServices": [
           {
-              "nameOrDescription": "Servicios de consultoría en computación",
-              "percentageSales": "80%",
+              "nameOrDescription": "Fabricación de otros productos químicos",
+              "percentageSales": "90%",
               "percentageMarket": "1%"
           },
           {
-              "nameOrDescription": "Comercio al por mayor de artículos de papelería para uso escolar y de oficina",
-              "percentageSales": "10%",
-              "percentageMarket": "1%"
-          },
-          {
-              "nameOrDescription": "Comercio al por mayor de equipo y accesorios de cómputo",
+              "nameOrDescription": "Fabricación de jabones, limpiadores y dentífricos",
               "percentageSales": "10%",
               "percentageMarket": "1%"
           }
       ],
       "endorsementData": {
-          "completeNameOrBusinessName": "URIEL JOSE BASTO PEDRE",
-          "rfc": "GIT130827B16",
-          "curp": "BAPU860528HYNSDR04",
+          "completeNameOrBusinessName": "ERNESTO ZAMORA CONTRERAS",
+          "rfc": "COQ180522NB4",
+          "curp": "ZACE680115HDFMNR03",
           "occupationOrBusiness": "Empresario",
           "relationshipWithApplicant": "Socio",
-          "email": "urielbasto@grupogit.com",
-          "electronicSignatureSerialNumber": "1000000702301650",
-          "civilStatus": "CASADO",
-          "regime": "MANCOMUNADO",
+          "email": "e.zamora@coquilub.com.mx",
+          "electronicSignatureSerialNumber": "00001000000702377019",
+          "civilStatus": "Casado(a) bienes separados",
+          "regime": "Casado(a) bienes separados",
           "spousesName": "",
-          "fiscalAddress": "C 9 C POR 72 E",
-          "colony": "Gran Santa Fe",
-          "postalCode": "97314",
-          "city": "MÉRIDA",
-          "municipality": "Mérida",
-          "state": "Yucatán",
-          "country": "Mexico",
-          "landline": "9995767253",
-          "typeDomicile": "Propio"
+          "fiscalAddress": "- EJE 9 MZA 7 LT 4",
+          "colony": "Lomas de Cartagena",
+          "postalCode": "54958",
+          "city": "TULTITLÁN",
+          "municipality": "Tultitlán",
+          "state": "México",
+          "country": "MEX",
+          "landline": "5554318659"
       },
-      "annualSales": 8613109.523389997,
-      "nameOflegalRepresentative": "URIEL JOSE BASTO PEDRE",
-      "nameOfEndorsement": "URIEL JOSE BASTO PEDRE"
+      "annualSales": 464620429.6732603,
+      "nameOflegalRepresentative": "ERNESTO ZAMORA CONTRERAS",
+      "nameOfEndorsement": "ERNESTO ZAMORA CONTRERAS"
   };
     const response = await digitalFormatsAxios.post(endpoint, json);
     if (response.status === 200) {
