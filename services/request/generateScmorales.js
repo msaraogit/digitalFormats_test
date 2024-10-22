@@ -16,115 +16,109 @@ const generateScmorales = async () => {
   try {
     const digitalFormatsAxios = DIGITALFORMATS();
     const endpoint = `/generate-scmorales`;
-    const json={
-      "place": "México",
-      "date": "28/08/2024",
+    const json= {
+      "place": "Ciudad de México",
+      "date": "10/09/2024",
       "type": "DIGITAL",
-      "term": "24",
-      "amount": 4000000,
+      "term": "18",
+      "amount": 210000,
       "workingCapital": true,
       "fixedAsset": false,
       "technologicalInnovation": false,
       "consolidationLiabilities": false,
       "others": false,
       "descriptionOtherUse": "",
-      "businessName": "COQUILUB S.A. de C.V.",
-      "rfc": "COQ180522NB4",
-      "tradeNameOrBusiness": "COQUILUB",
-      "business": "Comercializacion de aceites y lubricantes",
+      "businessName": "TECNOLOGIAS DE LA INFORMACION ODEM S.A.S. de C.V.",
+      "rfc": "TIO180716555",
+      "tradeNameOrBusiness": "TECNOLOGIAS DE LA INFORMACION ODEM",
+      "business": "Comercio equipo de computo y software ",
       "nacionality": "MEX",
-      "electronicSignatureSerialNumber": "00001000000702377019",
-      "fiscalAddress": "Fuente de pegaso 131",
-      "colony": "Fuentes del Valle",
-      "postalCode": "54910",
-      "landline": "5534082928",
-      "city": "TULTITLÁN",
-      "municipality": "Tultitlán",
-      "state": "México",
+      "fiscalAddress": "av 11  71",
+      "colony": "San Juan Xalpa",
+      "postalCode": "9850",
+      "landline": "5579784191",
+      "city": "Nezahualcóyotl",
+      "municipality": "Iztapalapa",
+      "state": "Ciudad de México",
       "country": "MEX",
-      "numberEmployees": 11,
+      "numberEmployees": 0,
       "webSite": "",
-      "notaryNumber": "91",
-      "nameOfNotary": "Maria Guadalupe Pérez Palomino ",
-      "entity": "México",
-      "writingNumber": "38665",
-      "registrationInformation": "N-2018087506",
-      "constitutionDate": "2018-10-26",
-      "empoweredRepresentative": "Miguel Ángel Galván González ",
-      "writingNumberWithPowers": "15969",
-      "writingDate": "2017-11-29",
+      "notaryNumber": "N/A",
+      "nameOfNotary": "Secretaría de Economía",
+      "entity": "N/A",
+      "writingNumber": "SAS2018133135",
+      "registrationInformation": "N-2018064294",
+      "constitutionDate": "2018-08-09",
+      "empoweredRepresentative": "Oscar  Paredes Águila",
+      "writingNumberWithPowers": "SAS2018133135",
+      "writingDate": "2018-07-16",
       "managers": [
           {
-              "completeName": "MIGUEL ANGEL GALVAN GONZALEZ",
+              "completeName": "OSCAR PAREDES AGUILA",
               "position": "Directivo",
-              "rfc": "GAGM860901I95",
-              "email": "m.galvan@coquilub.com.mx"
-          },
-          {
-              "completeName": "ERNESTO ZAMORA CONTRERAS",
-              "position": "Directivo",
-              "rfc": "ZACE680115JD8",
-              "email": "e.zamora@coquilub.com.mx"
+              "rfc": "PAAO810407UQ3"
           }
       ],
       "contacts": [
           {
               "type": "Cobranza",
-              "completeName": "MIGUEL ANGEL GALVAN GONZALEZ",
+              "completeName": "OSCAR PAREDES AGUILA",
               "position": "Directivo",
-              "phone": "5563537073",
-              "email": "m.galvan@coquilub.com.mx"
+              "phone": "5579784191",
+              "email": "oscar.paredes@odemx.com"
           },
           {
               "type": "Negocios",
-              "completeName": "ERNESTO ZAMORA CONTRERAS",
-              "position": "Directivo",
-              "phone": "5554318659",
-              "email": "e.zamora@coquilub.com.mx"
+              "completeName": "undefined undefined undefined",
+              "position": "Directivo"
           },
           {
               "type": " en Caso de Aclaraciones de Información",
-              "completeName": "MIGUEL ANGEL GALVAN GONZALEZ",
+              "completeName": "OSCAR PAREDES AGUILA",
               "position": "Directivo",
-              "phone": "5563537073",
-              "email": "m.galvan@coquilub.com.mx"
+              "phone": "5579784191",
+              "email": "oscar.paredes@odemx.com"
           }
       ],
       "productsServices": [
           {
-              "nameOrDescription": "Fabricación de otros productos químicos",
-              "percentageSales": "90%",
+              "nameOrDescription": "Comercio al por mayor de equipo y accesorios de cómputo",
+              "percentageSales": "60%",
               "percentageMarket": "1%"
           },
           {
-              "nameOrDescription": "Fabricación de jabones, limpiadores y dentífricos",
+              "nameOrDescription": "Otros servicios profesionales, científicos y técnicos",
+              "percentageSales": "10%",
+              "percentageMarket": "1%"
+          },
+          {
+              "nameOrDescription": "Otros servicios de telecomunicaciones",
               "percentageSales": "10%",
               "percentageMarket": "1%"
           }
       ],
       "endorsementData": {
-          "completeNameOrBusinessName": "ERNESTO ZAMORA CONTRERAS",
-          "rfc": "COQ180522NB4",
-          "curp": "ZACE680115HDFMNR03",
+          "completeNameOrBusinessName": "OSCAR PAREDES AGUILA",
+          "rfc": "TIO180716555",
+          "curp": "PAAO810407HDFRGS07",
           "occupationOrBusiness": "Empresario",
           "relationshipWithApplicant": "Socio",
-          "email": "e.zamora@coquilub.com.mx",
-          "electronicSignatureSerialNumber": "00001000000702377019",
-          "civilStatus": "Casado(a) bienes separados",
-          "regime": "Casado(a) bienes separados",
+          "email": "oscar.paredes@odemx.com",
+          "civilStatus": "Soltero(a)",
+          "regime": "Soltero(a)",
           "spousesName": "",
-          "fiscalAddress": "- EJE 9 MZA 7 LT 4",
-          "colony": "Lomas de Cartagena",
-          "postalCode": "54958",
-          "city": "TULTITLÁN",
-          "municipality": "Tultitlán",
+          "fiscalAddress": "Av. Morelos",
+          "colony": "Estado de México",
+          "postalCode": "57210",
+          "city": "NEZAHUALCÓYOTL",
+          "municipality": "Nezahualcóyotl",
           "state": "México",
           "country": "MEX",
-          "landline": "5554318659"
+          "landline": "5579784191"
       },
-      "annualSales": 464620429.6732603,
-      "nameOflegalRepresentative": "ERNESTO ZAMORA CONTRERAS",
-      "nameOfEndorsement": "ERNESTO ZAMORA CONTRERAS"
+      "annualSales": 4830191.96,
+      "nameOflegalRepresentative": "OSCAR PAREDES AGUILA",
+      "nameOfEndorsement": "OSCAR PAREDES AGUILA"
   };
     const response = await digitalFormatsAxios.post(endpoint, json);
     if (response.status === 200) {

@@ -33,90 +33,91 @@ const {
   };
 
   function fillModel() {
-const model = new Model({
-  "accountData": {
-      "typeOperation": "Pasiva",
-      "interestPayment": [],
-      "originBankingInstitution": "BBVA MEXICO, S.A.",
-      "originAccount": "144883896",
-      "originClabe": "012180001448838961",
-      "BankingInstitutionFinsus": "BANORTE",
-      "AccountFinsus": "0313939121",
-      "ClabeFinsus": "072180003139391218"
-  },
-  "customerData": {
-      "completeName": "COQUILUB",
-      "nacionality": "MX",
-      "rfc": "COQ180522NB4",
-      "street": "FUENTE DE PEGASO",
-      "externalNumber": "MANZANA 27 LOTE 43",
-      "internalNumber": "DEPTO B CASA 131",
-      "colony": "FUENTES DEL VALLE 1A SECC",
-      "postalCode": "54910",
-      "city": "TULTITLAN",
-      "municipality": "TULTITLAN",
-      "state": "MEXICO",
-      "country": "MX",
-      "electronicSignature": "00001000000702377019",
-      "business": "Comercializacion de aceites y lubricantes"
-  },
-  "constitutiveWritingData": {
-      "instrumentNumber": "38665",
-      "constitutionDate": "2017-11-29",
-      "completeNamePublicFederator": "Maria Guadalupe Pérez Palomino ",
-      "numberPublicFederator": "91",
-      "locationPublicFederator": "México",
-      "comercialFolio": "N-2018087506",
-      "placeRegister": "México",
-      "dateRegister": "2018-10-26"
-  },
-  "legalRepresentativeData": {
-      "name": "Jose Alberto",
-      "paternal": "Vazquez",
-      "maternal": "Hernandez",
-      "gender": "HOMBRE",
-      "ocupation": "Empresario",
-      "birthDay": "01/09/1986",
-      "countryBirth": "MEX",
-      "nacionality": "MEX",
-      "street": "C EL PORTAL 105",
-      "externalNumber": "105",
-      "colony": "Jardines de la Hacienda Sur",
-      "postalCode": "54720",
-      "city": "CUAUTITLÁN IZCALLI",
-      "municipality": "Cuautitlán Izcalli",
-      "state": "México",
-      "country": "MEX",
-      "curp": "GAGM860901HMCLNG01",
-      "AdvancedElectronicSignature": ""
-  },
-  "dataThePowersLegalRepresentative": {
-      "instrumentNumber": "15969",
-      "instrumentDate": "2023-01-26",
-      "completeNamePublicFederator": "Patricia Mónica Ruiz de  Chávez Rincón Gallardo",
-      "numberPublicFederator": "163",
-      "DemarcationPublicFederator": "México"
-  },
-  "media": {
-      "customerMedia": {
-          "homePhone": "5563537073",
-          "officePhone": "",
-          "movilPhone": "",
-          "email": "m.galvan@coquilub.com.mx"
-      },
-      "finsusMedia": {
+const model = new Model(
+  {
+    "accountData": {
+        "typeOperation": "Pasiva",
+        "interestPayment": [],
+        "originBankingInstitution": "STP",
+        "originAccount": "101-61-403501",
+        "originClabe": "646682177602339965",
+        "BankingInstitutionFinsus": "BANORTE",
+        "AccountFinsus": "0313939121",
+        "ClabeFinsus": "072180003139391218"
+    },
+    "customerData": {
+        "completeName": "H&H REFACCIONES SA DE ",
+        "nacionality": "MX",
+        "rfc": "H&H051122PC6",
+        "street": "VIA MAGNA",
+        "externalNumber": "6",
+        "internalNumber": "T 1000 D 303",
+        "colony": "BOSQUES DE LAS PALMAS",
+        "postalCode": "52787",
+        "city": "HUIXQUILUCAN",
+        "municipality": "HUIXQUILUCAN",
+        "state": "MEXICO",
+        "country": "MX",
+        "business": "Comercio al por menor de partes y refacciones nuevas para automóvile"
+    },
+    "constitutiveWritingData": {
+        "instrumentNumber": "1541",
+        "constitutionDate": "2005/11/22",
+        "completeNamePublicFederator": "Félix Jorge David González ",
+        "numberPublicFederator": "34",
+        "locationPublicFederator": "Tabasco",
+        "comercialFolio": "8742",
+        "placeRegister": "Tabasco",
+        "dateRegister": "2006/02/02"
+    },
+    "legalRepresentativeData": {
+        "name": "HECTOR JOSE",
+        "paternal": "VIDAL",
+        "maternal": "LOPEZ",
+        "ocupation": "Empresario",
+        "birthDay": "31/10/1996",
+        "countryBirth": "MEX",
+        "nacionality": "MEX",
+        "street": "Prol paseo usumacinta hacienda Casablanca 1 ",
+        "externalNumber": "1",
+        "internalNumber": "17",
+        "colony": "Hacienda Casa Blanca",
+        "postalCode": "86287",
+        "city": "CENTRO",
+        "municipality": "Centro",
+        "state": "Tabasco",
+        "country": "MEX",
+        "curp": "VILH961031HTCDPC09",
+        "AdvancedElectronicSignature": ""
+    },
+    "dataThePowersLegalRepresentative": {
+        "instrumentNumber": "17315",
+        "instrumentDate": "2023/10/16",
+        "completeNamePublicFederator": "Carlos Camelo Cano ",
+        "numberPublicFederator": "11",
+        "DemarcationPublicFederator": "Tabasco"
+    },
+    "media": {
+        "customerMedia": {
+            "homePhone": "9933112504",
+            "officePhone": "",
+            "movilPhone": "",
+            "email": "hhrefacciones@gmail.com"
+        },
+        "finsusMedia": {
             "phone": "(55) 56614915 ext. 228",
             "email": "servicioalcliente@finsus.mx"
-      }
-  },
-  "signature": {
-      "completeNameCustomer": "MIGUEL ANGEL GALVAN GONZALEZ",
-      "completeNameFinsus": "",
-      "day": "5",
-      "month": "Septiembre",
-      "year": "2024"
-  }
-});
+        }
+    },
+    "signature": {
+        "completeNameCustomer": ["HECTOR JOSE VIDAL LOPEZ"],
+        "completeNameFinsus": "JUAN LOZANO GONZÁLEZ",
+        "day": "22",
+        "month": "Octubre",
+        "year": "2024"
+    }
+}
+);
 
 return model;  
 }

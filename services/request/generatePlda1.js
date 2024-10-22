@@ -127,7 +127,7 @@ function fillModel() {
     },
     accountUse: {
       makeContributionsAccount: false,
-      monetaryInstrumentWillMakeContributions: ["Transferencia"],
+      monetaryInstrumentWillMakeContributions: ["Transferencias"],
       sourceOfResources: ["Ventas", "Otros"],
       otherSourcesResources: "",
       nameOflegalRepresentative: "Jose Alberto. Vazquez. Hernandez.",

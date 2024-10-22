@@ -540,7 +540,7 @@ const getSanexo = async () => {
     format: "A4",
     printBackground: true,
     margin: { left: "0cm", top: "1cm", right: "0cm", bottom: "0cm" },
-    scale: 0.58,
+    scale: 0.7,
   });
   fs.writeFileSync(pagarePDF, pdfPagare);
   await browser.close();
