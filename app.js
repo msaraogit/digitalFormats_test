@@ -15,6 +15,7 @@ const {
   getCse,
   getTrainingContractN3,
   getContractAccount,
+  getContractPulpi,
 } = require("./app/br/digitalFormatBR");
 
 const readline = require('readline');
@@ -41,7 +42,8 @@ const opciones = [
   'getPrivacynoticepm', // Comentados en tu código original
   'getPrivacynoticea1',
   'geteAutbca1',
-  'geteAutbcpm'
+  'geteAutbcpm',
+  'getContractPulpi',
 ];
 
 // Mostrar el menú con las opciones numeradas
@@ -70,6 +72,7 @@ const ejecutarOpcion = async (opcion) => {
       case 14: await getPrivacynoticea1(); break;
       case 15: await geteAutbca1(); break;
       case 16: await geteAutbcpm(); break;
+      case 17: await getContractPulpi(); break;
       default: console.log("Opción no válida."); return;
     }
     console.log("Operación completada con éxito.");
